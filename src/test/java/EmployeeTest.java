@@ -47,4 +47,10 @@ public class EmployeeTest {
         assertEquals("Sam", employee.getName());
     }
 
+    @Test
+    public void cantSetNullName(){
+        employee.setName(null);
+        assertEquals("Trevor", employee.getName());
+    }
+
 }
